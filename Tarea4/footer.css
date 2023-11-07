@@ -1,0 +1,41 @@
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 10px;
+  font-size: 16px; /* Tamaño base para la fuente */
+  box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
+}
+
+/* Estilos para pantallas pequeñas */
+@media screen and (max-width: 600px) {
+  footer {
+    padding: 15px 10px; /* Menos padding en pantallas pequeñas */
+  }
+  
+  footer .footer-container p {
+    font-size: 14px; /* Tamaño de fuente más pequeño para pantallas pequeñas */
+  }
+}
+
+/* Estilos para pantallas medianas */
+@media screen and (min-width: 601px) {
+  footer {
+    padding: 20px 10px; /* Padding estándar para pantallas medianas */
+  }
+  
+  footer .footer-container p {
+    font-size: 16px; /* Tamaño de fuente estándar para pantallas medianas */
+  }
+}
+
+/* Estilos para pantallas grandes */
+@media screen and (min-width: 1024px) {
+  footer {
+    padding: 25px 10px; /* Más padding en pantallas grandes */
+  }
+  
+  footer .footer-container p {
+    font-size: 18px; /* Tamaño de fuente más grande para pantallas grandes */
+  }
+}

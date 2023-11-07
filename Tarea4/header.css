@@ -1,0 +1,46 @@
+header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 10px;
+  box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
+}
+
+header h1 {
+  margin: 0;
+  font-size: 24px; /* Tamaño base para la fuente del título */
+  transition: font-size 0.3s ease; /* Transición suave para el cambio de tamaño de la fuente */
+}
+
+/* Estilos para pantallas pequeñas */
+@media screen and (max-width: 600px) {
+  header {
+    padding: 15px 10px; /* Menos padding en pantallas pequeñas */
+  }
+  
+  header h1 {
+    font-size: 20px; /* Tamaño de fuente más pequeño para pantallas pequeñas */
+  }
+}
+
+/* Estilos para pantallas medianas */
+@media screen and (min-width: 601px) {
+  header {
+    padding: 20px 10px; /* Padding estándar para pantallas medianas */
+  }
+  
+  header h1 {
+    font-size: 24px; /* Tamaño de fuente estándar para pantallas medianas */
+  }
+}
+
+/* Estilos para pantallas grandes */
+@media screen and (min-width: 1024px) {
+  header {
+    padding: 25px 10px; /* Más padding en pantallas grandes */
+  }
+  
+  header h1 {
+    font-size: 28px; /* Tamaño de fuente más grande para pantallas grandes */
+  }
+}

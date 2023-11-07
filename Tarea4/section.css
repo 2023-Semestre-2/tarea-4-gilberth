@@ -1,0 +1,93 @@
+.content-area {
+  max-width: 1200px;
+  margin: 0 auto; /* Centra la sección en la página */
+}
+
+.dog-care-article {
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  line-height: 1.6;
+}
+
+.dog-care-article h2 {
+  color: #007bff; /* Un color brillante para el título para destacar */
+  margin-bottom: 1rem;
+}
+
+.dog-care-article p {
+  color: #333;
+  margin-bottom: 1rem; /* Espacio entre párrafos */
+}
+
+.responsive-image,
+.responsive-video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto 20px; /* Espaciado debajo de imágenes y videos */
+}
+
+.responsive-image {
+  border-radius: 5px; /* Bordes redondeados para la imagen */
+}
+
+.responsive-video {
+  border-radius: 5px; /* Bordes redondeados para el video */
+}
+
+.dog-care-article a {
+  color: #007bff; /* Color que coincide con el título para enlaces */
+  text-decoration: none; /* No subrayado para enlaces */
+  transition: color 0.3s ease;
+}
+
+.dog-care-article a:hover {
+  color: #0056b3; /* Color más oscuro para el hover de enlaces */
+}
+
+/* Estilos responsivos para diferentes tamaños de pantalla */
+@media screen and (max-width: 768px) {
+  .dog-care-article {
+    margin: 10px;
+    padding: 15px;
+  }
+
+  .dog-care-article h2 {
+    font-size: 1.75rem; /* Tamaño de fuente ligeramente más pequeño en dispositivos móviles */
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+  /* Estilos opcionales para tabletas y pantallas pequeñas de escritorio */
+}
+
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+  .dog-care-article {
+    margin: 15px;
+    padding: 20px;
+  }
+
+  .dog-care-article h2 {
+    font-size: 2rem; /* Tamaño de la fuente adecuado para pantallas medianas */
+  }
+
+  .dog-care-article p {
+    font-size: 1rem; /* Tamaño de la fuente ligeramente más grande para facilitar la lectura en pantallas medianas */
+  }
+
+  .responsive-image,
+  .responsive-video {
+    border-radius: 5px; /* Mantiene los bordes redondeados para imágenes y videos */
+  }
+
+  /* Ajusta el tamaño de los elementos de imagen y video si es necesario */
+  .responsive-video {
+    width: 80%; /* Reduce el tamaño del video para evitar que ocupe todo el ancho en pantallas medianas */
+    margin-bottom: 20px; /* Espaciado debajo del video */
+  }
+}
+

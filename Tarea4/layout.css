@@ -1,0 +1,33 @@
+/* CSS para dispositivos con pantalla grande */
+.main-container {
+  display: flex;
+  flex-direction: row;
+}
+
+aside {
+  flex: 1; /* Ocupa 1 parte del espacio disponible */
+  order: 1;
+  max-width: 20%; /* Máximo 30% del ancho del contenedor principal */
+}
+
+.content-area {
+  flex: 3; /* Ocupa 3 partes del espacio disponible */
+  order: 2;
+  max-width: 80%; /* Máximo 70% del ancho del contenedor principal */
+}
+
+/* CSS para dispositivos con pantalla pequeña */
+@media screen and (max-width: 768px) {
+  .main-container {
+    flex-direction: column;
+  }
+
+  aside {
+    order: -1; /* Esto coloca el aside al principio */
+    max-width: 100%; /* El aside ocupará todo el ancho disponible */
+  }
+
+  .content-area {
+    max-width: 100%; /* El área de contenido ocupará todo el ancho disponible */
+  }
+}
